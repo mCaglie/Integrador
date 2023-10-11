@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Macondo&family=Major+Mono+Display&family=MonteCarlo&display=swap");
+
+:root {
+  --miel: #edae49;
+  --arcilla: #d1495b;
+  --grama: #00798c;
+  --sueños: #0c7af8;
+  --noche: #003d5b;
+  --reposo: #b67bef;
+  --medio: #ceb3f6;
+  --lilas: #c480e5;
+  --unicorn: #f3f3ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  background-color: var(--unicorn);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  margin-top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--unicorn);
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 0 3px rgba(48, 47, 47, 0.63);
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  transform: scale(1.1);
+  color: var(--grama);
+}
+
+.logo {
+  height: 60px;
+  margin-left: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__rombo {
+  height: 0.8rem;
+  margin: auto;
+}
+
+.users {
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.users a {
+  font-size: 14px;
+}
+
+main {
+  margin-top: 70px;
+}
+
+.hero {
+  max-width: 1200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+}
+
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  padding: 0 120px;
+  font-family: "Major Mono Display", monospace;
+  font-size: 70px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.hero h2 {
+  font-family: "MonteCarlo", cursive;
+  font-size: 3rem;
+  color: var(--arcilla);
+}
+
+.hero__content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__text {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero h3 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 1.5rem;
+}
+.hero p {
+  font-size: 1.3rem;
+}
+
+.hero span {
+  font-weight: 600;
+}
+
+.hero img {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px 1px var(--noche);
+}
+
+.separador {
+  width: 100%;
+  height: 1rem;
+  background-image: url(./imgs/abstract-background-6556364.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 4rem;
+}
+
+.nos {
+  margin: auto;
+  margin-top: 80px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nos-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nos__about,
+.nos__filosofia {
+  margin: 1.5rem 0;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nos__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nos h2 {
+  margin-bottom: 2rem;
+}
+
+.nos-container p {
+  padding: 0 2rem;
+  max-width: 700px;
+  text-align: justify;
+}
+
+.nos img {
+  height: 250px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.nos__about img {
+  box-shadow: -1px 2px 2px 0.8px var(--noche);
+}
+
+.nos__filosofia img {
+  box-shadow: 1px 2px 2px 0.8px var(--noche);
+}
