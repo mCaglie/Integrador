@@ -42,12 +42,10 @@ header {
 
 header a {
   text-decoration: none;
-  display: none;
 }
 
 header a:hover {
   transform: scale(1.1);
-  color: var(--grama);
 }
 
 .logo {
@@ -55,34 +53,44 @@ header a:hover {
   margin-left: 1rem;
 }
 
-.navbar {
+.navbar-list {
+  list-style: none;
+  background: var(--grama);
+  width: 100%;
+  height: calc (100vh - 70px);
+  position: absolute;
+  top: 70px;
+  left: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  gap: 40px;
+  display: none;
+  padding: 1rem;
 }
 
-.navbar__rombo {
-  height: 0.8rem;
-  margin: auto;
+.navbar-list a {
+  font-size: 20px;
+  background: var(--grama);
+  color: var(--unicorn);
+}
+
+#toggle-menu {
   display: none;
 }
 
-.users {
+.navbar i {
+  font-size: 2rem;
+  display: block;
   margin-right: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  gap: 1rem;
 }
 
-.users a {
-  font-size: 14px;
+#toggle-menu:checked ~ .navbar-list {
+  display: flex;
 }
 
 h2 {
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Major Mono Display", monospace;
   font-size: 1.5rem;
 }
 
