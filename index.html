@@ -31,33 +31,38 @@
           <li><a href="#">Inicio</a></li>
           <li><a href="#nos">Nosotros</a></li>
           <li><a href="#programas">Talleres</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#comunidad">Comunidad</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
+      <div class="users">
+        <a href="#">Creá tu cuenta</a>
+        <a href="#">Ingresar</a>
+      </div>
     </header>
     <section class="hero">
       <div class="hero__bg">
         <div class="hero__title">
-          <h1>La Colombina</h1>
           <h2>Escuela de Arte</h2>
-          <p>
+          <h1><span>L</span>a <span>C</span>olombina</h1>
+          <!--- <p>
             Cada trazo es un suspiro, cada color una emoción, y cada pincelada,
             una historia. Sumérgete en el río inagotable de la creatividad,
             donde el arte y la pasión se entrelazan en un baile eterno.
             Bienvenidos a nuestro mundo, donde los sueños se convierten en obras
             de arte y la imaginación es la brújula que guía nuestras almas.
-          </p>
-        </div>
-        <div class="hero__btns">
-          <div class="btn-cursos" type="button">CURSOS</div>
-          <div class="btn-info" type="button">INFORMACION</div>
+          </p>---->
         </div>
         <div class="hero__content">
-          <span>COMUNIDAD</span>
+          <div>COMUNIDAD</div>
           <img src="./assets/imgs/rombo.png" alt="rombo separador" />
-          <span>CREATIVIDAD</span>
+          <div>CREATIVIDAD</div>
           <img src="./assets/imgs/rombo.png" alt="rombo separador" />
-          <span>DIVERSIDAD</span>
+          <div>DIVERSIDAD</div>
+        </div>
+
+        <div class="btn-info" type="button">
+          <i class="fa-brands fa-whatsapp"></i>INFORMACION
         </div>
       </div>
     </section>
@@ -78,37 +83,31 @@
           </p>
         </div>
         <div class="pilares-container">
-          <div class="pilares-content">
-            <div class="pilares__img comunidad-img"></div>
-            <div class="pilares__txt">
-              <p>
-                Creemos que aprender y crear juntos enriquece la experiencia
-                artística y fortalece los lazos entre los miembros de nuestra
-                <span class="community">comunidad</span>.
-              </p>
-            </div>
+          <div class="pilares__img comunidad-img"></div>
+          <div class="pilares__img creatividad-img"></div>
+          <div class="pilares__img diversidad-img"></div>
+          <div class="pilares__txt">
+            <p>
+              Creemos que aprender y crear juntos enriquece la experiencia
+              artística y fortalece los lazos entre los miembros de nuestra
+              <span class="community">comunidad</span>.
+            </p>
           </div>
 
-          <div class="pilares-content">
-            <div class="pilares__img creatividad-img"></div>
-            <div class="pilares__txt">
-              <p>
-                Fomentamos la
-                <span class="creativity">creatividad</span> en su forma más pura
-                y sin restricciones.
-              </p>
-            </div>
+          <div class="pilares__txt">
+            <p>
+              Fomentamos la
+              <span class="creativity">creatividad</span> en su forma más pura y
+              sin restricciones.
+            </p>
           </div>
 
-          <div class="pilares-content">
-            <div class="pilares__img diversidad-img"></div>
-            <div class="pilares__txt">
-              <p>
-                Promovemos un entorno inclusivo donde podamos encontrar
-                inspiración en la
-                <span class="diversity">diversidad</span> que nos rodea.
-              </p>
-            </div>
+          <div class="pilares__txt">
+            <p>
+              Promovemos un entorno inclusivo donde podamos encontrar
+              inspiración en la
+              <span class="diversity">diversidad</span> que nos rodea.
+            </p>
           </div>
         </div>
         <div class="nos__filo">
@@ -118,24 +117,23 @@
             Creemos en la libertad de expresión, la experimentación y el poder
             de la creatividad para transformar vidas. Fomentamos un entorno
             donde los estudiantes se sientan seguros para explorar su arte de
-            manera auténtica y sin restricciones. En La Colombina, no solo
-            enseñamos técnicas artísticas; también alentamos a nuestros
-            estudiantes a encontrar su voz artística única y a contar sus
-            propias historias a través del arte.
+            manera auténtica y sin restricciones.
           </p>
         </div>
       </div>
     </section>
     <section class="cards" id="programas">
-      <h2>Nuestros Programas</h2>
-      <p>
-        En La Colombina, ofrecemos una amplia variedad de programas y cursos
-        diseñados para satisfacer las necesidades de artistas de todas las
-        edades y niveles de experiencia. Desde las clases de arte para niños que
-        estimulan la imaginación hasta los programas de formación profesional
-        que preparan a los artistas para una carrera en el mundo del arte,
-        nuestra oferta educativa es diversa y enriquecedora.
-      </p>
+      <div class="cards__title">
+        <h2>Nuestros Programas</h2>
+        <p>
+          En La Colombina, ofrecemos una amplia variedad de programas y cursos
+          diseñados para satisfacer las necesidades de artistas de todas las
+          edades y niveles de experiencia. Desde las clases de arte para niños
+          que estimulan la imaginación hasta los programas de formación
+          profesional que preparan a los artistas para una carrera en el mundo
+          del arte, nuestra oferta educativa es diversa y enriquecedora.
+        </p>
+      </div>
       <div class="cards-container">
         <div class="card_content">
           <img src="./assets/imgs/guitar-6683101.jpg" alt="guitarra" />
@@ -143,14 +141,13 @@
           <div class="card_content-text">
             <h3>Música</h3>
             <p>
-              Sumérgete en la belleza de los sonidos, explora tus habilidades
-              musicales y conecta con otros amantes de la música en una
-              comunidad vibrante.
+              Sumérgete en la belleza de los sonidos y explora tus habilidades
+              musicales.
               <br />
               <br />
             </p>
           </div>
-          <div class="card__info">Ver mas</div>
+          <div class="card__btn">Ver mas</div>
         </div>
 
         <div class="card_content">
@@ -159,13 +156,11 @@
           <div class="card_content-text">
             <h3>Pintura</h3>
             <p>
-              Aprenderás diversas técnicas y estilos artísticos mientras
-              cultivas tu propia voz en el lienzo. Descubre la magia de la
-              pintura y transforma tu imaginación en un universo de creatividad
-              y expresión visual.
+              Transforma tu imaginación en un universo de creatividad y
+              expresión visual.
             </p>
           </div>
-          <div class="card__info">Ver mas</div>
+          <div class="card__btn">Ver mas</div>
         </div>
 
         <div class="card_content">
@@ -174,12 +169,11 @@
           <div class="card_content-text">
             <h3>Teatro</h3>
             <p>
-              Desde juegos teatrales para los más jóvenes hasta cursos avanzados
-              para adultos, te invitamos a explorar el arte de la actuación y a
-              descubrir el actor que llevas dentro.
+              Te invitamos a explorar el arte de la actuación y a descubrir el
+              actor que llevas dentro.
             </p>
           </div>
-          <div class="card__info">Ver mas</div>
+          <div class="card__btn">Ver mas</div>
         </div>
         <div class="card_content">
           <img src="./assets/imgs/danza.jpg" alt="danza" />
@@ -187,14 +181,11 @@
           <div class="card_content-text">
             <h3>Danza</h3>
             <p>
-              Ofrecemos una amplia variedad de estilos de danza, desde ballet
-              clásico hasta danza contemporánea, para estudiantes de todas las
-              edades.
-              <br />
-              <br />
+              Ofrecemos una amplia variedad de estilos de danza para estudiantes
+              de todas las edades.
             </p>
           </div>
-          <div class="card__info">Ver mas</div>
+          <div class="card__btn">Ver mas</div>
         </div>
         <div class="card_content">
           <img src="./assets/imgs/escultura.jpg" alt="Escultura" />
@@ -202,12 +193,11 @@
           <div class="card_content-text">
             <h3>Escultura</h3>
             <p>
-              Nuestros talleres te brindarán la oportunidad de trabajar con
-              diferentes materiales y técnicas para dar vida a tus ideas y
-              emociones en forma tridimensional.
+              Trabajamos con diferentes materiales y técnicas para dar vida a
+              tus ideas en forma tridimensional.
             </p>
           </div>
-          <div class="card__info">Ver mas</div>
+          <div class="card__btn">Ver mas</div>
         </div>
         <div class="card_content">
           <img src="./assets/imgs/fotografia.jpg" alt="Fotografia" />
@@ -215,24 +205,115 @@
           <div class="card_content-text">
             <h3>Fotografía</h3>
             <p>
-              Desde la fotografía digital hasta la fotografía analógica,
-              nuestros cursos te ayudarán a dominar las técnicas fotográficas y
-              a desarrollar un ojo crítico para la composición.
+              Aprende a dominar las técnicas fotográficas y a desarrollar un ojo
+              crítico para la composición.
             </p>
           </div>
-          <div class="card__info">Ver mas</div>
+          <div class="card__btn">Ver mas</div>
         </div>
       </div>
     </section>
-    <section class="comunidad">
-      <h2>Nuestra Comunidad</h2>
-      <p>
-        En La Colombina, no solo obtendrás una educación artística excepcional,
-        sino que también te unirás a una comunidad apasionada de artistas y
-        amantes del arte. Aquí, tendrás la oportunidad de colaborar, compartir
-        ideas y enriquecer tu experiencia artística a través de eventos,
-        exposiciones y actividades culturales emocionantes.
-      </p>
+    <section id="comunidad">
+      <div class="comunidad_bg">
+        <div class="comunidad__container">
+          <h2>Nuestra Comunidad</h2>
+          <p>
+            En La Colombina, no solo obtendrás una educación artística
+            excepcional, sino que también te unirás a una comunidad apasionada
+            de artistas y amantes del arte. Aquí, tendrás la oportunidad de
+            colaborar, compartir ideas y enriquecer tu experiencia artística a
+            través de eventos, exposiciones y actividades culturales
+            emocionantes.
+          </p>
+        </div>
+      </div>
     </section>
+    <section id="contact">
+      <h2>Contacto</h2>
+      <div class="contact-container">
+        <div class="contact-us">
+          <h3>Envianos tu consulta</h3>
+          <form action="contacto" class="contact-us__form">
+            <div>
+              <label for="name">Nombre y Apellido <span>*</span></label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div>
+              <label for="age">Edad <span>*</span></label>
+              <input type="number" name="age" id="age" required />
+            </div>
+            <div>
+              <label for="phone">Telefono <span>*</span></label>
+              <input type="tel" name="phone" id="phone" required />
+            </div>
+            <div>
+              <label for="email">Correo Electrónico <span>*</span></label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <p>Selecciona el formato por el que deseas recibir información</p>
+            <div id="checkbox">
+              <input type="checkbox" name="formato" id="grupal" />
+              <label for="grupal">Talleres Grupales</label>
+              <input type="checkbox" name="formato" id="personal" />
+              <label for="personal">Clases Personalizadas</label>
+            </div>
+            <div class="textarea">
+              <label for="coment">Cuéntanos tus dudas o intereses</label>
+              <textarea
+                name="coment"
+                id="coment"
+                cols="20"
+                rows="10"
+              ></textarea>
+            </div>
+            <button>ENVIAR</button>
+          </form>
+        </div>
+        <div class="contact-us social-location">
+          <div class="contact-us-social">
+            <h3>Social</h3>
+            <h4>Visitanos en nuestras redes!</h4>
+            <div class="contact__social-icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+
+          <div class="contact__us-where">
+            <h3>¿Dónde estamos?</h3>
+
+            <p>
+              <i class="fa-solid fa-location-pin"></i> Carlos Thays 1075 -
+              Córdoba
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d601.8212272913008!2d-64.18363376727012!3d-31.430241023572506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a29279d38491%3A0xd87f5f9197b39ec6!2sCentro%20Cultural%20Manuel%20de%20Falla!5e0!3m2!1ses-419!2sar!4v1697836640814!5m2!1ses-419!2sar"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="foot-copy">Copyright © La Colombina 2023</div>
+      <div class="foot-social">
+        <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+        <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+        <i class="fa-brands fa-x-twitter" style="color: #ffffff"></i>
+        <i class="fa-brands fa-youtube" style="color: #ffffff"></i>
+      </div>
+      <div class="foot-contact">
+        <h4>Contacto</h4>
+        <p><i class="fa-solid fa-phone"></i> Tel. 351-6232222</p>
+        <p><i class="fa-solid fa-location-pin"></i> Carlos Thays 1075 (Cba)</p>
+      </div>
+    </footer>
   </body>
 </html>
