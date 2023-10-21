@@ -161,16 +161,6 @@ header a {
   text-shadow: 1px 1px 3px var(--noche);
 }
 
-.hero__title p {
-  max-width: 1000px;
-  padding: 0 1rem;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  border-radius: 1rem;
-  text-align: center;
-}
-
 .hero__mainstays {
   width: 80%;
   display: flex;
@@ -363,7 +353,7 @@ header a {
 }
 
 #programas {
-  padding: 70px 1rem;
+  padding: 70px 1rem 2rem;
   width: 100%;
   text-align: center;
   margin: auto;
@@ -382,9 +372,6 @@ header a {
   gap: 2.5rem;
   max-width: 1200px;
   font-size: 1.2rem;
-}
-
-.cards h2 {
   color: #fff;
 }
 
@@ -395,6 +382,7 @@ header a {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  margin-bottom: 1rem;
 }
 
 .card_content {
@@ -456,6 +444,11 @@ header a {
 .card__btn:hover {
   cursor: pointer;
   background-color: var(--noche);
+}
+
+.btn-inscription {
+  width: max-content;
+  padding: 1rem;
 }
 
 #community {
@@ -543,28 +536,43 @@ header a {
 }
 
 #contact {
-  max-width: 1200px;
+  width: 100%;
   padding: 75px 1rem;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
+  background: var(--grama);
 }
 
-#contact h2 {
+.contact__title {
   margin: auto;
+  color: var(--unicorn);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact__title p {
+  font-size: 1.5rem;
 }
 
 #contact h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-family: "Major Mono Display", monospace;
+  color: var(--grama);
 }
 
 .contact-container {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   padding: 2rem;
+  margin: auto;
 }
 
 .contact-us {
@@ -573,6 +581,9 @@ header a {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  background: var(--unicorn);
+  padding: 3rem;
+  border-radius: 25px;
 }
 
 .contact-us__form {
@@ -653,8 +664,8 @@ header a {
   gap: 2rem;
 }
 
-.contact-us-social h4 {
-  font-size: 1.2rem;
+.contact-us-social p {
+  font-size: 1.5rem;
 }
 
 .contact__social-icons {
@@ -665,7 +676,13 @@ header a {
 }
 
 .contact__social-icons i {
-  font-size: 2.3rem;
+  font-size: 2.8rem;
+}
+
+.contact__social-icons i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: var(--grama);
 }
 
 .contact__us-where {
@@ -677,8 +694,7 @@ header a {
 }
 
 .contact__us-where p {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .contact__us-where p i {
@@ -701,8 +717,8 @@ footer {
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
-  color: #bbbbbd;
   box-shadow: 0 -1px 5px var(--noche);
+  color: #bbbbbd;
 }
 
 .foot-social {
@@ -726,4 +742,10 @@ footer {
 .foot-contact i {
   font-size: 0.8rem;
   margin-right: 0.3rem;
+}
+
+.foot-social i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: var(--unicorn);
 }
