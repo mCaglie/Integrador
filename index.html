@@ -29,9 +29,9 @@
         <input type="checkbox" id="toggle-menu" />
         <ul class="navbar-list">
           <li><a href="#">Inicio</a></li>
-          <li><a href="#nos">Nosotros</a></li>
+          <li><a href="#about">Nosotros</a></li>
           <li><a href="#programas">Talleres</a></li>
-          <li><a href="#comunidad">Comunidad</a></li>
+          <li><a href="#community">Comunidad</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
@@ -40,35 +40,33 @@
         <a href="#">Ingresar</a>
       </div>
     </header>
-    <section class="hero">
-      <div class="hero__bg">
-        <div class="hero__title">
-          <h2>Escuela de Arte</h2>
-          <h1><span>L</span>a <span>C</span>olombina</h1>
-          <!--- <p>
+    <section id="hero">
+      <div class="hero__title">
+        <h2>Escuela de Arte</h2>
+        <h1><span>L</span>a <span>C</span>olombina</h1>
+        <!--- <p>
             Cada trazo es un suspiro, cada color una emoción, y cada pincelada,
             una historia. Sumérgete en el río inagotable de la creatividad,
             donde el arte y la pasión se entrelazan en un baile eterno.
             Bienvenidos a nuestro mundo, donde los sueños se convierten en obras
             de arte y la imaginación es la brújula que guía nuestras almas.
           </p>---->
-        </div>
-        <div class="hero__content">
-          <div>COMUNIDAD</div>
-          <img src="./assets/imgs/rombo.png" alt="rombo separador" />
-          <div>CREATIVIDAD</div>
-          <img src="./assets/imgs/rombo.png" alt="rombo separador" />
-          <div>DIVERSIDAD</div>
-        </div>
+      </div>
+      <div class="hero__mainstays">
+        <div>COMUNIDAD</div>
+        <img src="./assets/imgs/rombo.png" alt="rombo separador" />
+        <div>CREATIVIDAD</div>
+        <img src="./assets/imgs/rombo.png" alt="rombo separador" />
+        <div>DIVERSIDAD</div>
+      </div>
 
-        <div class="btn-info" type="button">
-          <i class="fa-brands fa-whatsapp"></i>INFORMACION
-        </div>
+      <div class="btn-info" type="button">
+        <i class="fa-brands fa-whatsapp"></i>INFORMACION
       </div>
     </section>
-    <section class="nos" id="nos">
-      <div class="nos-container">
-        <div class="nos__about-us">
+    <section id="about">
+      <div class="about__container">
+        <div class="about-us">
           <h2>¿Quiénes Somos?</h2>
           <p>
             Somos una comunidad diversa de artistas, profesores apasionados y
@@ -82,44 +80,48 @@
             conviertan en agentes de cambio a través del arte.
           </p>
         </div>
-        <div class="pilares-container">
-          <div class="pilares__img comunidad-img"></div>
-          <div class="pilares__img creatividad-img"></div>
-          <div class="pilares__img diversidad-img"></div>
-          <div class="pilares__txt">
+        <div class="about-mainstays">
+          <div class="about-mainstays__img community_icon"></div>
+          <div class="about-mainstays__img creativity_icon"></div>
+          <div class="about-mainstays__img diversity_icon"></div>
+          <div class="about-mainstays__txt">
             <p>
               Creemos que aprender y crear juntos enriquece la experiencia
               artística y fortalece los lazos entre los miembros de nuestra
-              <span class="community">comunidad</span>.
+              <span class="community_span">comunidad</span>.
             </p>
           </div>
 
-          <div class="pilares__txt">
+          <div class="about-mainstays__txt">
             <p>
               Fomentamos la
-              <span class="creativity">creatividad</span> en su forma más pura y
-              sin restricciones.
+              <span class="creativity_span">creatividad</span> en su forma más
+              pura y sin restricciones.
             </p>
           </div>
 
-          <div class="pilares__txt">
+          <div class="about-mainstays__txt">
             <p>
               Promovemos un entorno inclusivo donde podamos encontrar
               inspiración en la
-              <span class="diversity">diversidad</span> que nos rodea.
+              <span class="diversity_span">diversidad</span> que nos rodea.
             </p>
           </div>
         </div>
-        <div class="nos__filo">
-          <h3>Nuestra Filosofía</h3>
-
-          <p>
-            Creemos en la libertad de expresión, la experimentación y el poder
-            de la creatividad para transformar vidas. Fomentamos un entorno
-            donde los estudiantes se sientan seguros para explorar su arte de
-            manera auténtica y sin restricciones.
-          </p>
-        </div>
+        <p>
+          Estos tres pilares son la base de la experiencia educativa en "La
+          Colombina" y reflejan nuestro compromiso de nutrir la creatividad,
+          construir una comunidad educativa sólida y celebrar la diversidad en
+          el mundo del arte.
+        </p>
+      </div>
+      <div class="about__decoration">
+        <img src="./assets/imgs/pilar.png" alt="dibujo de pilar" />
+        <img
+          src="./assets/imgs/silueta-de-mascara-de-carnaval.png"
+          alt="mascara de caraval"
+        />
+        <img src="./assets/imgs/pilar.png" alt="dibujo de pilar" />
       </div>
     </section>
     <section class="cards" id="programas">
@@ -213,18 +215,28 @@
         </div>
       </div>
     </section>
-    <section id="comunidad">
-      <div class="comunidad_bg">
-        <div class="comunidad__container">
-          <h2>Nuestra Comunidad</h2>
-          <p>
-            En La Colombina, no solo obtendrás una educación artística
-            excepcional, sino que también te unirás a una comunidad apasionada
-            de artistas y amantes del arte. Aquí, tendrás la oportunidad de
-            colaborar, compartir ideas y enriquecer tu experiencia artística a
-            través de eventos, exposiciones y actividades culturales
-            emocionantes.
-          </p>
+    <section id="community">
+      <div class="community__title">
+        <h2>Nuestra Comunidad</h2>
+        <p>
+          En La Colombina, te encontrarás con una comunidad apasionada de
+          artistas y amantes del arte. Aquí, tendrás la oportunidad de
+          colaborar, compartir ideas y enriquecer tu experiencia artística a
+          través de eventos, exposiciones y actividades culturales emocionantes.
+        </p>
+      </div>
+      <div class="community__content">
+        <div class="community__content-imgs">
+          <div class="community__content-filo">
+            <h3>Nuestra Filosofía</h3>
+
+            <p>
+              Creemos en la libertad de expresión, la experimentación y el poder
+              de la creatividad para transformar vidas. Fomentamos un entorno
+              donde los estudiantes se sientan seguros para explorar su arte de
+              manera auténtica y sin restricciones.
+            </p>
+          </div>
         </div>
       </div>
     </section>
