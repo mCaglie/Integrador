@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="fontello.css" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="media.css" />
     <link
       rel="shortcut icon"
       href="./assets/imgs/favicon-32x32.png"
@@ -28,33 +29,38 @@
         <label for="toggle-menu"> <i class="fa-solid fa-bars"></i> </label>
         <input type="checkbox" id="toggle-menu" />
         <ul class="navbar-list">
+          <li class="navbar__users">
+            <i class="fa-regular fa-user"></i>
+            <a href="#">Ingresar</a>
+          </li>
           <li><a href="#">Inicio</a></li>
-          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#about">La Escuela</a></li>
           <li><a href="#programas">Talleres</a></li>
           <li><a href="#community">Comunidad</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li>
+            <i class="fa-regular fa-address-book"></i
+            ><a href="#contact">Contacto</a>
+          </li>
         </ul>
       </nav>
-      <div class="users">
-        <a href="#">Mi Espacio</a>
-        <a href="#">Registrarme</a>
-      </div>
     </header>
     <section id="hero">
-      <div class="hero__title">
-        <h2>Escuela de Arte</h2>
-        <h1><span>L</span>a <span>C</span>olombina</h1>
-      </div>
-      <div class="hero__mainstays">
-        <div>COMUNIDAD</div>
-        <img src="./assets/imgs/rombo.png" alt="rombo separador" />
-        <div>CREATIVIDAD</div>
-        <img src="./assets/imgs/rombo.png" alt="rombo separador" />
-        <div>DIVERSIDAD</div>
-      </div>
+      <div class="hero__container">
+        <div class="hero__title">
+          <h2>Escuela de Arte</h2>
+          <h1><span>L</span>a <span>C</span>olombina</h1>
+        </div>
+        <div class="hero__mainstays">
+          <div>COMUNIDAD</div>
+          <img src="./assets/imgs/rombo.png" alt="rombo separador" />
+          <div>CREATIVIDAD</div>
+          <img src="./assets/imgs/rombo.png" alt="rombo separador" />
+          <div>DIVERSIDAD</div>
+        </div>
 
-      <div class="btn-info" type="button">
-        <i class="fa-brands fa-whatsapp"></i>INFORMACION
+        <div class="btn-info" type="button">
+          <i class="fa-brands fa-whatsapp"></i>INFORMACION
+        </div>
       </div>
     </section>
     <section id="about">
@@ -75,8 +81,6 @@
         </div>
         <div class="about-mainstays">
           <div class="about-mainstays__img community_icon"></div>
-          <div class="about-mainstays__img creativity_icon"></div>
-          <div class="about-mainstays__img diversity_icon"></div>
           <div class="about-mainstays__txt">
             <p>
               Creemos que aprender y crear juntos enriquece la experiencia
@@ -84,7 +88,7 @@
               <span class="community_span">comunidad</span>.
             </p>
           </div>
-
+          <div class="about-mainstays__img creativity_icon"></div>
           <div class="about-mainstays__txt">
             <p>
               Fomentamos la
@@ -92,7 +96,7 @@
               pura y sin restricciones.
             </p>
           </div>
-
+          <div class="about-mainstays__img diversity_icon"></div>
           <div class="about-mainstays__txt">
             <p>
               Promovemos un entorno inclusivo donde podamos encontrar
@@ -208,7 +212,7 @@
         </div>
       </div>
       <div class="btn-info btn-inscription" type="button">
-        <i class="fa-brands fa-whatsapp"></i>¡QUIERO INSCRIBIRME!
+        ¡QUIERO INSCRIBIRME!
       </div>
     </section>
     <section id="community">
@@ -264,7 +268,7 @@
               <label for="email">Correo Electrónico <span>*</span></label>
               <input type="email" name="email" id="email" required />
             </div>
-            <p>Selecciona el formato por el que deseas recibir información</p>
+            <p>Selecciona el formato por el que deseas recibir información:</p>
             <div id="checkbox">
               <input type="checkbox" name="formato" id="grupal" />
               <label for="grupal">Talleres Grupales</label>
