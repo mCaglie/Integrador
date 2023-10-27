@@ -12,9 +12,6 @@
     width: 40%;
   }
 
-  .navbar-list a {
-    font-size: 1rem;
-  }
   .fa-bars {
     font-size: 1.8rem;
   }
@@ -46,12 +43,72 @@
   .creativity_icon {
     order: -1;
   }
+
   .contact-container {
-    max-width: 90%;
-    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 80%;
+    display: grid;
+    grid-template-areas:
+      "form social"
+      "form where"
+      "form where";
+    grid-template-columns: 50% 40%;
+    grid-template-rows: repeat(3, 200px);
+    justify-content: center;
+    align-content: center;
+    gap: 1.5rem;
   }
   .contact-us {
-    max-width: 50%;
+    grid-area: form;
+    max-width: 100%;
+    min-width: 300px;
+    padding: 1rem;
+    border-radius: 25px;
+    height: 100%;
+  }
+
+  .contact-us__form {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #name,
+  #age,
+  #phone,
+  #email {
+    height: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  #checkbox {
+    width: 100%;
+    grid-template-columns: 30px 250px;
+    row-gap: 1rem;
+  }
+
+  .contact-us button {
+    margin-top: 0.5rem;
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .contact-us-social {
+    grid-area: social;
+    gap: 2rem;
+    height: 100%;
+  }
+
+  .contact__social-icons i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: var(--grama);
+  }
+
+  .contact__us-where {
+    grid-area: where;
+    gap: 1.5rem;
+    height: 100%;
   }
 }
 
@@ -97,7 +154,7 @@
   }
 
   .navbar-list a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     background: var(--grama);
     color: var(--unicorn);
     width: 200px;
@@ -137,20 +194,6 @@
     font-size: 1.2rem;
   }
 
-  @keyframes blur {
-    from {
-      transform: translateY(-100vh);
-    }
-
-    to {
-      transform: translateY(0);
-    }
-  }
-
-  .hero__container {
-    animation: logo-hero 1s 250ms;
-  }
-
   .hero__title h1 {
     font-size: 80px;
   }
@@ -164,19 +207,7 @@
   }
 
   .hero__title img {
-    height: 300px;
-  }
-
-  @keyframes logo-hero {
-    from {
-      opacity: 0;
-      scale: 0%;
-    }
-
-    to {
-      opacity: 1;
-      scale: 100%;
-    }
+    height: 250px;
   }
 
   .hero__mains {
@@ -208,7 +239,7 @@
   }
 
   .about__mainstays-content {
-    max-width: 250px;
+    max-width: 300px;
     display: grid;
     grid-template-rows: 90px 100px;
     text-align: center;
@@ -349,6 +380,7 @@
 
   #contact {
     gap: 1.5rem;
+    padding: 3rem 1rem;
   }
 
   .contact__title {
@@ -360,25 +392,33 @@
   }
 
   #contact h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .contact-container {
     max-width: 1200px;
-    min-width: 960px;
-    display: flex;
-    flex-direction: row;
+    min-width: 980px;
+    display: grid;
+    grid-template-areas:
+      "form social"
+      "form where"
+      "form where";
+    grid-template-columns: 50% 40%;
+    grid-template-rows: repeat(3, 260px);
     justify-content: center;
-    gap: 2rem;
+    align-content: center;
+    gap: 1.5rem;
   }
 
   .contact-us {
-    width: 100%;
-    min-width: 500px;
+    grid-area: form;
+    max-width: 100%;
+    min-width: 450px;
     display: flex;
     gap: 2rem;
     padding: 2rem;
     border-radius: 25px;
+    height: 100%;
   }
 
   .contact-us__form {
@@ -414,12 +454,8 @@
     font-size: 0.8rem;
   }
 
-  .social-location {
-    width: 100%;
-    min-width: 400px;
-  }
-
   .contact-us-social {
+    grid-area: social;
     gap: 2rem;
   }
 
@@ -428,7 +464,7 @@
   }
 
   .contact__social-icons {
-    gap: 3rem;
+    gap: 2rem;
     padding: 1rem;
   }
 
@@ -443,7 +479,9 @@
   }
 
   .contact__us-where {
+    grid-area: where;
     gap: 2rem;
+    height: 100%;
   }
 
   .contact__us-where p {
