@@ -5,10 +5,66 @@
 }
 
 body {
+}
+
+.login-container {
   height: 100vh;
   width: 100%;
-  background: #007c8c;
+  background: url(./imgs/fachada.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.login-content {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid var(--grama);
+  background: var(--noche);
+}
+
+.login-container h1 {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.login__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--grama);
+  border-radius: ;
+  height: 250px;
+  padding-top: 1rem;
+}
+
+.login__form input {
+  height: 2.5rem;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+  background: var(--unicorn);
+}
+
+.login__form button {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid var(--noche);
+  background: var(--noche);
+  color: var(--unicorn);
+  box-shadow: 0 0 5px var(--unicorn);
 }

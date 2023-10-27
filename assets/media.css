@@ -16,11 +16,11 @@
     font-size: 1.8rem;
   }
 
-  .hero__title h1 {
+  .hero__container h1 {
     font-size: 60px;
   }
 
-  .hero__title h2 {
+  .hero__container h2 {
     font-size: 50px;
   }
 
@@ -109,6 +109,7 @@
     grid-area: where;
     gap: 1.5rem;
     height: 100%;
+    text-align: center;
   }
 }
 
@@ -120,18 +121,18 @@
   header {
     height: 75px;
     padding: 0 2rem;
+    justify-content: space-around;
   }
 
   .logo {
     order: -1;
     position: static;
-    height: 60px;
-    width: 60px;
+    height: 65px;
+    width: 65px;
   }
 
   .logo:hover {
     cursor: pointer;
-    box-shadow: 0 0 8px var(--miel);
   }
 
   .navbar {
@@ -148,9 +149,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 600px;
+    width: 100%;
+    max-width: 700px;
     justify-content: space-around;
     padding: 0;
+    gap: 2rem;
   }
 
   .navbar-list a {
@@ -180,34 +183,34 @@
   }
 
   .users-login {
-    background: var(--unicorn);
+    display: inline-block;
+  }
+
+  .users-login img {
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 8px 1px var(--noche);
   }
 
-  .users-login i {
-    font-size: 1.2rem;
+  .users-login img:hover {
+    box-shadow: 0 0 4px var(--unicorn);
+    transform: scale(1.1);
   }
 
-  .hero__title h1 {
+  .hero__container h1 {
     font-size: 80px;
   }
 
-  .hero__title h1 span {
+  .hero__container h1 span {
     font-size: 120px;
   }
 
-  .hero__title h2 {
+  .hero__container h2 {
     font-size: 70px;
   }
 
-  .hero__title img {
-    height: 250px;
+  .hero__logo img {
+    height: 200px;
   }
 
   .hero__mains {
@@ -396,7 +399,7 @@
   }
 
   .contact-container {
-    max-width: 1200px;
+    max-width: 1000px;
     min-width: 980px;
     display: grid;
     grid-template-areas:
@@ -407,6 +410,7 @@
     grid-template-rows: repeat(3, 260px);
     justify-content: center;
     align-content: center;
+    justify-items: center;
     gap: 1.5rem;
   }
 
@@ -513,21 +517,8 @@
     font-size: 1.5rem;
   }
 
-  .foot-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 80%;
-  }
-
-  .foot-contact h4 {
-    font-size: 1rem;
-  }
-
-  .foot-contact i {
-    font-size: 0.8rem;
-    margin-right: 0.3rem;
+  .foot-signed {
+    display: inline-block;
   }
 
   .foot-social i:hover {
