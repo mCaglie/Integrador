@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
     />
     <link rel="stylesheet" href="fontello.css" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="./assets/media.css" />
     <link
       rel="shortcut icon"
       href="./assets/imgs/favicon-32x32.png"
@@ -19,29 +19,24 @@
   </head>
   <body>
     <header>
+      <div class="logo"><a href="#"></a></div>
       <nav class="navbar">
-        <label for="toggle-menu"> <i class="fa-solid fa-bars"></i> </label>
+        <label for="toggle-menu"><i class="fa-solid fa-bars"></i> </label>
         <input type="checkbox" id="toggle-menu" />
-        <ul class="navbar-list">
-          <li class="navbar__users">
-            <i class="fa-regular fa-user"></i>
-            <a href="#">Ingresar</a>
-          </li>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#about">La escuela</a></li>
-          <li><a href="#programas">Talleres</a></li>
-          <li><a href="#community">Comunidad</a></li>
-          <li>
-            <i class="fa-regular fa-address-book"></i
-            ><a href="#contact">Contacto</a>
-          </li>
-        </ul>
+        <div class="navbar-list">
+          <a class="navbar__list-usr" href="#"
+            ><i class="fa-regular fa-user"></i>Ingresar</a
+          >
+
+          <a href="#">Inicio</a>
+          <a href="#about">La escuela</a>
+          <a href="#programas">Talleres</a>
+          <a href="#community">Comunidad</a>
+          <a class="navbar__list-contact" href="#contact"
+            ><i class="fa-regular fa-address-book"></i>Contacto</a
+          >
+        </div>
       </nav>
-      <img
-        class="logo"
-        src="./assets/imgs/logo.inte.png"
-        alt="Logo La Colombina"
-      />
       <div class="users-login">
         <i class="fa-regular fa-user"><a href="#"></a></i>
       </div>
@@ -50,7 +45,7 @@
       <div class="hero__container">
         <div class="hero__title">
           <h1><span>L</span>a <span>C</span>olombina</h1>
-          <div class="hero__mainstays">
+          <div class="hero__logo">
             <img
               src="./assets/imgs/logo.inte.png"
               alt="logo de la escuela de arte La Colombina"
@@ -60,8 +55,13 @@
           <h2>Escuela de Arte</h2>
         </div>
 
-        <div class="btn-info" type="button">
-          <i class="fa-brands fa-whatsapp"></i>INFO
+        <div class="hero__mains">
+          <span>COMUNIDAD</span
+          ><img src="./assets/imgs/rombo.png" alt="icono rombo" /><span
+            >CREATIVIDAD</span
+          ><img src="./assets/imgs/rombo.png" alt="icono rombo" /><span
+            >DIVERSIDAD</span
+          >
         </div>
       </div>
     </section>
@@ -83,8 +83,8 @@
         </div>
         <div class="about__mainstays">
           <div class="about__mainstays-content">
-            <div class="about-mainstays__img community_icon"></div>
-            <div class="about-mainstays__txt">
+            <div class="about__mainstays-img community_icon"></div>
+            <div class="about__mainstays-txt">
               <p>
                 Creemos que aprender y crear juntos enriquece la experiencia
                 artística y fortalece los lazos entre los miembros de nuestra
@@ -93,22 +93,23 @@
             </div>
           </div>
           <div class="about__mainstays-content">
-            <div class="about-mainstays__img diversity_icon"></div>
-            <div class="about-mainstays__txt">
+            <div class="about__mainstays-img creativity_icon"></div>
+            <div class="about__mainstays-txt">
               <p>
-                Promovemos un entorno inclusivo donde podamos encontrar
-                inspiración en la
-                <span class="diversity_span">diversidad</span> que nos rodea.
+                Fomentamos la
+                <span class="creativity_span">creatividad</span> en su forma más
+                pura y sin restricciones. Es el pilar central que guía nuestra
+                enseñanza y nuestro enfoque en el arte.
               </p>
             </div>
           </div>
           <div class="about__mainstays-content">
-            <div class="about-mainstays__img creativity_icon"></div>
-            <div class="about-mainstays__txt">
+            <div class="about__mainstays-img diversity_icon"></div>
+            <div class="about__mainstays-txt">
               <p>
-                Fomentamos la
-                <span class="creativity_span">creatividad</span> en su forma más
-                pura y sin restricciones.
+                Promovemos un entorno inclusivo donde podamos encontrar
+                inspiración en la
+                <span class="diversity_span">diversidad</span> que nos rodea.
               </p>
             </div>
           </div>
@@ -141,11 +142,11 @@
           del arte, nuestra oferta educativa es diversa y enriquecedora.
         </p>
       </div>
-      <div class="cards-container">
-        <div class="card_content card-1">
+      <div class="cards__container">
+        <div class="card__content card-1">
           <img src="./assets/imgs/guitar-6683101.jpg" alt="guitarra" />
 
-          <div class="card_content-text">
+          <div class="card__content-text">
             <h3>Música</h3>
             <p>
               Sumérgete en la belleza de los sonidos y explora tus habilidades
@@ -157,10 +158,10 @@
           <div class="card__btn">Ver mas</div>
         </div>
 
-        <div class="card_content card-2">
+        <div class="card__content card-2">
           <img src="./assets/imgs/pintura.jpg" alt="Pintura" />
 
-          <div class="card_content-text">
+          <div class="card__content-text">
             <h3>Pintura</h3>
             <p>
               Transforma tu imaginación en un universo de creatividad y
@@ -170,10 +171,10 @@
           <div class="card__btn">Ver mas</div>
         </div>
 
-        <div class="card_content card-3">
+        <div class="card__content card-3">
           <img src="./assets/imgs/teatro.jpg" alt="Teatro" />
 
-          <div class="card_content-text">
+          <div class="card__content-text">
             <h3>Teatro</h3>
             <p>
               Te invitamos a explorar el arte de la actuación y a descubrir el
@@ -182,10 +183,10 @@
           </div>
           <div class="card__btn">Ver mas</div>
         </div>
-        <div class="card_content card-4">
+        <div class="card__content card-4">
           <img src="./assets/imgs/danza.jpg" alt="danza" />
 
-          <div class="card_content-text">
+          <div class="card__content-text">
             <h3>Danza</h3>
             <p>
               Ofrecemos una amplia variedad de estilos de danza para estudiantes
@@ -194,10 +195,10 @@
           </div>
           <div class="card__btn">Ver mas</div>
         </div>
-        <div class="card_content card-5">
+        <div class="card__content card-5">
           <img src="./assets/imgs/escultura.jpg" alt="Escultura" />
 
-          <div class="card_content-text card-1">
+          <div class="card__content-text card-1">
             <h3>Escultura</h3>
             <p>
               Trabajamos con diferentes materiales y técnicas para dar vida a
@@ -206,10 +207,10 @@
           </div>
           <div class="card__btn">Ver mas</div>
         </div>
-        <div class="card_content card-6">
+        <div class="card__content card-6">
           <img src="./assets/imgs/fotografia.jpg" alt="Fotografia" />
 
-          <div class="card_content-text">
+          <div class="card__content-text">
             <h3>Fotografía</h3>
             <p>
               Aprende a dominar las técnicas fotográficas y a desarrollar un ojo
@@ -219,8 +220,8 @@
           <div class="card__btn">Ver mas</div>
         </div>
       </div>
-      <div class="btn-info btn-inscription" type="button">
-        ¡QUIERO INSCRIBIRME!
+      <div class="btn-info" type="button">
+        <a href="#contact">¡QUIERO INSCRIBIRME!</a>
       </div>
     </section>
     <section id="community">
@@ -295,7 +296,7 @@
             <button>ENVIAR</button>
           </form>
         </div>
-        <div class="contact-us social-location">
+        <div class="social-location">
           <div class="contact-us-social">
             <h3>Social</h3>
             <p>Visitanos en nuestras redes!</p>

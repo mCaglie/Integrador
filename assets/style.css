@@ -20,7 +20,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px;
+  scroll-padding-top: 55px;
 }
 
 body {
@@ -35,19 +35,16 @@ h2 {
 
 header {
   width: 100%;
-  padding: 0 0.5rem;
-  height: 75px;
+  padding: 0 1rem;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.3rem;
   background: var(--grama);
   position: fixed;
   z-index: 1;
   box-shadow: 0 0 3px rgba(48, 47, 47, 0.63);
   top: 0;
-  animation: hero-blur 250ms both;
-  -webkit-animation: hero-blur 1s both;
 }
 
 header a {
@@ -56,96 +53,74 @@ header a {
 }
 
 .logo {
-  height: 60px;
-  position: absolute;
-  left: 40%;
-}
-
-.navbar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: url(./imgs/logo.navbar.png);
+  background-size: cover;
+  background-position: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 8px var(--noche);
 }
 
 #toggle-menu {
   display: none;
 }
 
+.fa-bars {
+  font-size: 1.5rem;
+  color: var(--unicorn);
+}
+
+.navbar-list i {
+  display: block;
+}
+
 .navbar-list {
   list-style: none;
   background: var(--grama);
   width: 60%;
-  height: calc (100vh - 75px);
+  height: calc (100vh - 60px);
   position: absolute;
-  top: 75px;
-  left: 0;
-  display: flex;
+  top: 60px;
+  right: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  padding: 1rem 1rem 1rem 2rem;
   display: none;
 }
 
-.navbar i {
-  font-size: 1.8rem;
-  display: block;
-  color: var(--noche);
-  padding-left: 10px;
-}
-
 .navbar-list a {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--unicorn);
-}
-
-.navbar-list li {
-  width: 80%;
-  padding: 0.5rem;
-}
-
-.navbar-list li:nth-child(6) {
-  border-top: 1px solid var(--noche);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.3rem;
-}
-
-.users a:active {
-  color: #fff;
 }
 
 #toggle-menu:checked ~ .navbar-list {
   display: flex;
 }
 
-.navbar__users {
+.navbar__list-usr,
+.navbar__list-contact {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.5rem;
-  border-bottom: 1px solid var(--noche);
-  font-weight: 600;
+  justify-content: center;
+  gap: 1rem;
+  width: 60%;
 }
 
-.navbar-list li i {
-  font-size: 1rem;
-  font-weight: 600;
+.navbar__list-usr {
+  border-bottom: 1px solid var(--noche);
+  padding-bottom: 0.5rem;
+}
+
+.navbar__list-contact {
+  border-top: 1px solid var(--noche);
+  padding-top: 0.5rem;
 }
 
 .users-login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.users-login i {
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding-right: 8px;
-  color: var(--noche);
+  display: none;
 }
 
 #hero {
@@ -155,19 +130,31 @@ header a {
   background-image: url(./imgs/fachada.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+#hero::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: #cecece91;
+  backdrop-filter: blur(3px);
+  animation: blur 500ms both;
 }
 
 .hero__container {
-  width: 100%;
+  width: 90%;
   height: 100%;
   padding: 0 1rem;
   margin: auto;
-  background: #cecece91;
-  backdrop-filter: blur(3px);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .hero__title {
@@ -175,7 +162,7 @@ header a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .hero__title h1 {
@@ -193,41 +180,24 @@ header a {
   order: 2;
 }
 
-.hero__mainstays {
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
-.hero__mainstays div {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.hero__mainstays img {
+.hero__title img {
   height: 150px;
 }
 
-.btn-info {
-  width: 120px;
-  height: 35px;
+.hero__mains {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 16px;
-  text-align: center;
-  background: var(--miel);
-  box-shadow: 0 0 5px var(--noche);
+  gap: 0.5rem;
 }
 
-.btn-info:active {
-  background: #99630c;
-}
-.btn-info i {
-  padding-right: 10px;
+.hero__mains span {
+  font-size: 0.8rem;
   font-weight: 600;
+}
+
+.hero__mains img {
+  height: 0.8rem;
 }
 
 #about {
@@ -242,16 +212,15 @@ header a {
 
 #about span {
   font-weight: 600;
-  font-size: 1.2rem;
 }
 
 .about__container {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   padding: 1rem 0;
   font-size: 1rem;
   text-align: center;
@@ -266,8 +235,11 @@ header a {
 }
 
 .about__us h2 {
-  margin: auto;
   margin-bottom: 0.5rem;
+}
+
+.about__container p {
+  max-width: 90%;
 }
 
 .mision {
@@ -284,21 +256,24 @@ header a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 2rem;
+  gap: 1.5rem;
+  margin: 2rem auto;
 }
 
 .about__mainstays-content {
-  max-width: 300px;
+  width: 95%;
+  max-width: 450px;
   display: flex;
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  gap: 0.5rem;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
 }
 
-.about-mainstays__img {
-  height: 80px;
-  width: 80px;
+.about__mainstays-img {
+  height: 90px;
+  width: 90px;
+  min-width: 90px;
   border-radius: 50%;
 }
 
@@ -308,7 +283,7 @@ header a {
   background-position: center;
   object-fit: cover;
   background-repeat: no-repeat;
-  animation: mainstays-ani 15s 5s infinite;
+  animation: community-ani 15s 5s infinite;
 }
 
 .creativity_icon {
@@ -316,6 +291,8 @@ header a {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  animation: creativity-ani 15s 5s infinite;
+  order: 2;
 }
 
 .diversity_icon {
@@ -323,9 +300,10 @@ header a {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  animation: diversity-ani 15s 5s infinite;
 }
 
-@keyframes mainstays-ani {
+@keyframes community-ani {
   25% {
     transform: rotate(-180deg);
   }
@@ -333,19 +311,49 @@ header a {
     transform: rotate(-180deg);
   }
   100% {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
 }
 
-.about-mainstays__txt {
-  font-size: 1rem;
-  width: 80%;
-  padding: 0 1rem;
+@keyframes creativity-ani {
+  25% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+
+  40% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: scale(0);
+    transform: rotate(0);
+  }
+  100% {
+    transform: scale(0);
+    transform: rotate(0);
+  }
 }
 
-.about-mainstays__txt span {
+@keyframes diversity-ani {
+  30% {
+    transform: rotateY(180deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.about__mainstays-txt {
+  font-size: 14px;
+}
+
+.about__mainstays-txt span {
   font-size: 1rem;
-  font-weight: 600;
 }
 
 .community_span {
@@ -397,7 +405,7 @@ header a {
   color: #fff;
 }
 
-.cards-container {
+.cards__container {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
@@ -407,7 +415,7 @@ header a {
   margin-bottom: 1rem;
 }
 
-.card_content {
+.card__content {
   width: 260px;
   min-width: 260px;
   display: grid;
@@ -438,26 +446,14 @@ header a {
   }
 }
 
-.card_content img {
+.card__content img {
   width: 100%;
   height: 100%;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 }
 
-.card_content h3 {
-  font-family: "Major Mono Display", monospace;
-  color: var(--unicorn);
-  padding-top: 0.5rem;
-}
-
-.card_content p {
-  font-size: 12px;
-  padding: 0 10px;
-  font-weight: 600;
-}
-
-.card_content-text {
+.card__content-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -465,6 +461,18 @@ header a {
   gap: 0.5rem;
   padding-bottom: 1.5rem;
   border-radius: 0 0 10px 10px;
+}
+
+.card__content-text h3 {
+  font-family: "Major Mono Display", monospace;
+  color: var(--unicorn);
+  padding-top: 0.5rem;
+}
+
+.card__content-text p {
+  font-size: 12px;
+  padding: 0 10px;
+  font-weight: 600;
 }
 
 .card__btn {
@@ -486,11 +494,29 @@ header a {
   background-color: var(--noche);
 }
 
-.btn-inscription {
+.btn-info {
   width: 150px;
   min-width: 150px;
+  height: 35px;
   padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: 600;
   font-size: 0.8rem;
+  text-align: center;
+  background: var(--miel);
+  box-shadow: 0 0 5px var(--noche);
+}
+
+.btn-info a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-info:active {
+  background: #99630c;
 }
 
 #community {
@@ -625,8 +651,9 @@ header a {
 
 .contact-container {
   width: 100%;
+  max-width: 625px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
   margin: auto;
@@ -635,6 +662,7 @@ header a {
 
 .contact-us {
   width: 100%;
+  max-width: 300px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -647,8 +675,9 @@ header a {
   view-timeline-axis: block;
   animation-timeline: --contact;
   animation-name: show-contact;
-  animation-range: entry 2% cover 30%;
+  animation-range: entry 2% cover 20%;
   animation-fill-mode: both;
+  height: 90%;
 }
 
 @keyframes show-contact {
@@ -687,6 +716,7 @@ header a {
 
 #grupal,
 #personal {
+  width: 100%;
   display: inline;
 }
 
@@ -697,17 +727,21 @@ header a {
   row-gap: 0.5rem;
 }
 
-#checkbox input {
-  height: 1rem;
-}
-
 .textarea textarea {
   resize: none;
+  border: none;
+  border-radius: 10px;
 }
 
 .contact-us__form span {
   color: var(--arcilla);
   font-size: 1.1rem;
+}
+
+.contact-us form input {
+  border: none;
+  border-radius: 10px;
+  outline: none;
 }
 
 .contact-us button {
@@ -728,8 +762,14 @@ header a {
 }
 
 .social-location {
-  justify-items: flex-start;
-  gap: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  view-timeline-name: --contact;
+  view-timeline-axis: block;
+  animation-timeline: --contact;
+  animation-name: show-contact;
+  animation-range: entry 2% cover 20%;
+  animation-fill-mode: both;
 }
 
 .contact-us-social {
@@ -738,18 +778,23 @@ header a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+  background: var(--unicorn);
+  border-radius: 15px;
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
 }
 
 .contact-us-social p {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .contact__social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .contact__social-icons i {
@@ -766,7 +811,10 @@ header a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+  background: var(--unicorn);
+  border-radius: 15px;
+  padding: 2rem 1rem;
 }
 
 .contact__us-where p {
@@ -813,11 +861,6 @@ footer {
 
 .foot-contact {
   display: none;
-}
-
-.foot-contact i {
-  font-size: 0.8rem;
-  margin-right: 0.3rem;
 }
 
 .foot-social i:active {
