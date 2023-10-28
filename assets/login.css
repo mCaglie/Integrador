@@ -237,8 +237,8 @@
   }
 
   .login-container {
-    height: 350px;
-    max-width: 280px;
+    height: 400px;
+    max-width: 320px;
     min-width: 280px;
   }
 
@@ -297,16 +297,16 @@
   .pass-forget__form {
     left: 0;
     top: -350px;
-    max-width: 280px;
+    max-width: 320px;
     min-width: 280px;
-    height: 260px;
+    height: 280px;
     border-radius: 15px 15px 0 0;
     transition: all 500ms linear;
     opacity: 0;
   }
 
   .pass-forget label {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
   }
 
@@ -322,7 +322,8 @@
   }
 
   .login-container {
-    width: 350px;
+    min-width: 350px;
+    max-width: 400px;
   }
 
   .login-content {
@@ -374,7 +375,8 @@
   }
 
   .pass-forget__form {
-    width: 350px;
+    min-width: 350px;
+    max-width: 400px;
     left: 0;
     top: -350px;
     height: 300px;
@@ -404,5 +406,32 @@
 
   .login-back {
     padding-bottom: 1rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .login-bg {
+    flex-direction: row;
+    padding: 1rem;
+  }
+
+  .login-bg h1 {
+    font-size: 2rem;
+    width: 35%;
+  }
+
+  .login-container {
+    height: 98%;
+    width: 50%;
+  }
+
+  .pass-forget__form {
+    height: 75%;
+    width: 50%;
+  }
+
+  .login-register,
+  .login-back {
+    font-size: 0.8rem;
   }
 }

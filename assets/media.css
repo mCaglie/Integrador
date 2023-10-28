@@ -527,3 +527,18 @@
     color: var(--unicorn);
   }
 }
+
+@media (max-height: 400px) {
+  #hero {
+    height: 100%;
+  }
+
+  .hero__container {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .hero__logo img {
+    height: 80px;
+  }
+}
