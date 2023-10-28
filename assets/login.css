@@ -4,37 +4,64 @@
   box-sizing: border-box;
 }
 
-body {
-}
-
-.login-container {
+.login-bg {
   height: 100vh;
   width: 100%;
   background: url(./imgs/fachada.jpg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.login-bg::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: #cecece52;
+}
+
+.login-bg h1 {
+  font-family: var(--title-font);
+  color: var(--unicorn);
+  font-size: 5rem;
+  text-shadow: -2px 2px 10px var(--noche);
+  position: relative;
+}
+
+.login-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px var(--noche);
+  border-radius: 20px;
+  height: 400px;
+  width: 800px;
+  background: #f3f3f3b0;
+  backdrop-filter: blur(3px);
 }
 
 .login-content {
-  width: 400px;
-  height: 500px;
+  width: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 1rem;
   border-radius: 20px;
-  border: 1px solid var(--grama);
-  background: var(--noche);
 }
 
-.login-container h1 {
-  width: 100%;
-  height: 100px;
-  text-align: center;
+.login__form h2,
+.login-register,
+.login-back {
+  display: none;
 }
 
 .login__form {
@@ -43,28 +70,339 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  background: var(--grama);
-  border-radius: ;
-  height: 250px;
-  padding-top: 1rem;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.login__form div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.login__form label {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--noche);
 }
 
 .login__form input {
   height: 2.5rem;
-  width: 70%;
   border: none;
-  border-radius: 5px;
-  background: var(--unicorn);
+  border-radius: 10px;
+  background: #f3f3f3a6;
+  padding: 0 1rem;
 }
 
 .login__form button {
+  margin-top: 1.5rem;
   padding: 0.5rem 2rem;
   font-size: 1rem;
-  font-weight: 600;
-  border-radius: 10px;
-  border: 1px solid var(--noche);
-  background: var(--noche);
+  font-weight: 500;
   color: var(--unicorn);
-  box-shadow: 0 0 5px var(--unicorn);
+  border: none;
+  border-radius: 10px;
+  background: var(--noche);
+  box-shadow: 0 0 3px var(--noche);
+}
+
+.login__form button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 1px var(--unicorn);
+}
+
+.pass-forget {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
+
+.pass-forget label {
+  font-size: 1.1rem;
+  color: var(--noche);
+}
+
+.pass-forget label {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#for-pass {
+  display: none;
+}
+
+.pass-forget__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: var(--grama);
+  border-radius: 15px 0 0 0;
+  padding: 1rem;
+  left: 350px;
+  right: 550px;
+  top: 0;
+  position: absolute;
+  width: 350px;
+  height: 300px;
+  z-index: 1;
+  transition: all 500ms linear;
+  color: var(--unicorn);
+  opacity: 0;
+}
+
+#for-pass:checked ~ div.pass-forget__form {
+  transform: translateX(-350px);
+  opacity: 1;
+}
+
+.pass-forget__form span {
+  color: var(--unicorn);
+  font-size: 1.1rem;
+}
+
+#email {
+  border: none;
+  border-radius: 5px;
+  min-height: 2rem;
+  padding: 0 1rem;
+  background: #f3f3f3a6;
+}
+
+.pass-forget__form div {
+  background: var(--noche);
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 3px var(--noche);
+}
+
+.pass-forget__form div:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px var(--unicorn);
+}
+
+.login__welcome {
+  width: 60%;
+  height: 100%;
+  background: var(--miel);
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 2;
+}
+
+.login__welcome h2 {
+  text-align: center;
+  font-family: var(--title-font);
+  color: var(--grama);
+}
+
+.login__welcome-p {
+  width: 70%;
+  padding: 2rem 0;
+  color: var(--noche);
+  font-size: 1.1rem;
+  text-align: center;
+  border-top: 2px solid var(--grama);
+  border-bottom: 2px solid var(--grama);
+}
+
+.login__welcome a {
+  color: var(--noche);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.login__welcome a:hover {
+  color: var(--grama);
+  transform: scale(1.1);
+}
+
+@media (max-width: 760px) {
+  .login-bg h1 {
+    max-width: 300px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .login-container {
+    height: 350px;
+    max-width: 280px;
+    min-width: 280px;
+  }
+
+  .login-content {
+    gap: 0.5rem;
+  }
+
+  .login__welcome {
+    display: none;
+  }
+
+  .login__form {
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .login__form h2 {
+    display: block;
+    color: var(--grama);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .login__form input {
+    height: 1.5rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .login__form label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--noche);
+  }
+
+  .login__form button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .login-register,
+  .login-back {
+    display: block;
+    text-decoration: none;
+    color: var(--noche);
+    font-size: 1rem;
+  }
+
+  .login-register a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--noche);
+  }
+
+  .pass-forget__form {
+    left: 0;
+    top: -350px;
+    max-width: 280px;
+    min-width: 280px;
+    height: 260px;
+    border-radius: 15px 15px 0 0;
+    transition: all 500ms linear;
+    opacity: 0;
+  }
+
+  .pass-forget label {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  #for-pass:checked ~ div.pass-forget__form {
+    transform: translateY(350px);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 990px) {
+  .login-bg h1 {
+    font-size: 3rem;
+  }
+
+  .login-container {
+    width: 350px;
+  }
+
+  .login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 20px;
+  }
+
+  .login__welcome {
+    display: none;
+  }
+
+  .login__form {
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .login__form h2 {
+    display: block;
+    color: var(--grama);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .login__form input {
+    height: 2rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .login__form label {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--noche);
+  }
+
+  .login__form button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .pass-forget label {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .pass-forget__form {
+    width: 350px;
+    left: 0;
+    top: -350px;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+    transition: all 500ms linear;
+    opacity: 0;
+  }
+
+  #for-pass:checked ~ div.pass-forget__form {
+    transform: translateY(350px);
+    opacity: 1;
+  }
+
+  .login-register,
+  .login-back {
+    display: block;
+    text-decoration: none;
+    color: var(--noche);
+    font-size: 1rem;
+  }
+
+  .login-register a {
+    color: var(--noche);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .login-back {
+    padding-bottom: 1rem;
+  }
 }

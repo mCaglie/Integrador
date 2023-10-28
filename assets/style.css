@@ -6,6 +6,7 @@
   --grama: #007c8c;
   --noche: #003d5b;
   --unicorn: #f3f3ff;
+  --title-font: "Major Mono Display", monospace;
 }
 
 * {
@@ -161,8 +162,9 @@ header a {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 3.5rem;
   position: relative;
   text-align: center;
   margin: auto;
