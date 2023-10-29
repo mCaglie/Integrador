@@ -467,9 +467,9 @@ header a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   top: 0;
-  padding: 1rem 0.5rem;
+  padding: 0.3rem 0.5rem;
   position: absolute;
   width: 260px;
   height: 100%;
@@ -567,7 +567,7 @@ header a {
   font-size: 14px;
   padding: 8px;
   width: 100px;
-  bottom: -0.8rem;
+  bottom: -1rem;
   position: absolute;
   left: calc(130px - 50px);
   transition: 250ms;
