@@ -54,10 +54,9 @@ header a {
 .logo {
   height: 50px;
   width: 50px;
-  border-radius: 50%;
-  background-image: url(./imgs/logoLC.png);
-  background-size: cover;
-  background-position: contain;
+  background-image: url(./imgs/logos/nav_logo.png);
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -129,7 +128,7 @@ header a {
   width: 100%;
   height: 100vh;
   padding-top: 60px;
-  background-image: url(./imgs/fachada.jpg);
+  background-image: url(./imgs/backgrounds/hero_bg.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -210,7 +209,6 @@ header a {
 }
 
 .hero__logo img {
-  border-radius: 50%;
   max-height: 150px;
 }
 
@@ -311,7 +309,7 @@ header a {
 }
 
 .community_icon {
-  background-image: url(./imgs/comunidad.png);
+  background-image: url(./imgs/about/comunidad.png);
   background-size: contain;
   background-position: center;
   object-fit: cover;
@@ -320,7 +318,7 @@ header a {
 }
 
 .creativity_icon {
-  background-image: url(./imgs/creatividad.png);
+  background-image: url(./imgs/about/creatividad.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -329,7 +327,7 @@ header a {
 }
 
 .diversity_icon {
-  background-image: url(./imgs/people.png);
+  background-image: url(./imgs/about/diversidad.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -614,7 +612,7 @@ header a {
 }
 
 #community {
-  background-image: url(./imgs/comunidad_bg.jpg);
+  background-image: url(./imgs/community/bg_community.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -663,7 +661,7 @@ header a {
   width: 90%;
   max-width: 450px;
   max-height: 350px;
-  background-image: url(./imgs/community_1.jpg);
+  background-image: url(./imgs/community/community_1.jpg);
   background-size: cover;
   border-radius: 15px;
   box-shadow: 0 0 8px var(--noche);
@@ -673,22 +671,22 @@ header a {
 
 @keyframes change-bg {
   25% {
-    background-image: url(./imgs/nos.jpg);
+    background-image: url(./imgs/community/community_2.jpg);
     background-size: cover;
   }
 
   50% {
-    background-image: url(./imgs/clases_musica.jpg);
+    background-image: url(./imgs/community/community_3.jpg);
     background-size: cover;
   }
 
   75% {
-    background-image: url(./imgs/animation2.jpg);
+    background-image: url(./imgs/community/community_4.jpg);
     background-size: cover;
   }
 
   100% {
-    background-image: url(./imgs/community_1.jpg);
+    background-image: url(./imgs/community/community_1.jpg);
     background-size: cover;
   }
 }
