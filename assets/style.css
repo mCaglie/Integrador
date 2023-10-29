@@ -42,6 +42,8 @@ header {
   z-index: 100;
   box-shadow: 0 0 3px rgba(48, 47, 47, 0.63);
   top: 0;
+  animation: blur 500ms linear;
+  -webkit-animation: blur 500ms linear;
 }
 
 header a {
@@ -142,16 +144,19 @@ header a {
   position: absolute;
   background: #cecece91;
   backdrop-filter: blur(3px);
-  animation: blur 500ms both;
+  animation: blur 500ms linear;
+  -webkit-animation: blur 500ms linear;
 }
 
 @keyframes blur {
   from {
-    transform: translateY(-100vh);
+    opacity: 0;
+    transform: scale(0);
   }
 
   to {
-    transform: translateY(0);
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -168,17 +173,18 @@ header a {
   text-align: center;
   margin: auto;
   animation: logo-hero 1s 250ms;
+  -webkit-animation: logo-hero 500ms linear;
 }
 
 @keyframes logo-hero {
   from {
     opacity: 0;
-    scale: 0%;
+    transform: translateY(50px);
   }
 
   to {
     opacity: 1;
-    scale: 100%;
+    transform: translateY(0);
   }
 }
 
@@ -469,7 +475,7 @@ header a {
   align-items: center;
   gap: 0.5rem;
   top: 0;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 0.3rem;
   position: absolute;
   width: 260px;
   height: 100%;
@@ -485,6 +491,10 @@ header a {
   font-size: 0.9rem;
   text-overflow: ellipsis;
   overflow: scroll;
+}
+
+.card__content .card__content-more p::-webkit-scrollbar {
+  display: none;
 }
 
 .card-1 .card__btn:hover ~ .more-music {
