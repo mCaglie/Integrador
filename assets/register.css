@@ -302,17 +302,35 @@
 @media (max-height: 600px) {
   .reg-bg {
     flex-direction: row;
-    padding: 1rem;
   }
 
   .reg-bg h1 {
     font-size: 2rem;
     width: 35%;
+    text-align: center;
+    width: 50%;
+  }
+
+  .reg-bg h3 {
+    font-size: 1rem;
   }
 
   .reg-container {
-    height: 98%;
+    height: 100%;
     width: 50%;
+    border-radius: 0;
+  }
+
+  .reg-content {
+    gap: 0;
+  }
+
+  .reg__form {
+    gap: 0;
+  }
+
+  .reg__form label {
+    padding-top: 0.3rem;
   }
 
   .reg__form-p,
