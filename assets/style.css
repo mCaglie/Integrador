@@ -39,7 +39,7 @@ header {
   align-items: center;
   background: var(--grama);
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   box-shadow: 0 0 3px rgba(48, 47, 47, 0.63);
   top: 0;
 }
@@ -57,7 +57,6 @@ header a {
   background-size: cover;
   background-position: contain;
   background-repeat: no-repeat;
-  box-shadow: 0 0 8px var(--noche);
 }
 
 #toggle-menu {
@@ -158,13 +157,14 @@ header a {
 
 .hero__container {
   width: 90%;
-  height: 100%;
+  height: 80%;
   padding: 0 1rem;
+  top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3.5rem;
+  gap: 3rem;
   position: relative;
   text-align: center;
   margin: auto;
@@ -206,8 +206,7 @@ header a {
 
 .hero__logo img {
   border-radius: 50%;
-  height: 120px;
-  box-shadow: 0px 0px 8px var(--unicorn);
+  max-height: 150px;
 }
 
 .hero__mains {
@@ -463,6 +462,59 @@ header a {
   animation-fill-mode: both;
 }
 
+.card__content-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  top: 0;
+  padding: 1rem 0.5rem;
+  position: absolute;
+  width: 260px;
+  height: 100%;
+  background: var(--noche);
+  border-radius: 8px;
+  color: var(--unicorn);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 500ms linear;
+}
+
+.card__content .card__content-more p {
+  font-size: 0.9rem;
+}
+
+.card-1 .card__btn:hover ~ .more-music {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-2 .card__btn:hover ~ .more-paint {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-3 .card__btn:hover ~ .more-theater {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-4 .card__btn:hover ~ .more-dance {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-5 .card__btn:hover ~ .more-sculpture {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-6 .card__btn:hover ~ .more-photo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @keyframes show-cards {
   from {
     opacity: 0.25;
@@ -499,7 +551,7 @@ header a {
 }
 
 .card__content-text p {
-  font-size: 12px;
+  font-size: 0.9rem;
   padding: 0 10px;
   font-weight: 600;
 }
@@ -513,10 +565,11 @@ header a {
   font-size: 14px;
   padding: 8px;
   width: 100px;
-  position: absolute;
   bottom: -0.8rem;
+  position: absolute;
   left: calc(130px - 50px);
   transition: 250ms;
+  z-index: 2;
 }
 
 .card__btn:active {
@@ -595,8 +648,9 @@ header a {
 }
 
 .community__content-imgs {
-  min-width: 280px;
-  min-height: 200px;
+  width: 90%;
+  max-width: 450px;
+  max-height: 350px;
   background-image: url(./imgs/community_1.jpg);
   background-size: cover;
   border-radius: 15px;
@@ -631,8 +685,9 @@ header a {
   color: var(--unicorn);
   background: #003d5bc4;
   font-size: 1rem;
-  max-width: 80%;
-  height: 100%;
+  width: 100%;
+  max-width: 450px;
+  max-height: 350px;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;

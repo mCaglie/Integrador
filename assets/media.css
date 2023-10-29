@@ -44,6 +44,21 @@
     order: -1;
   }
 
+  .community__content {
+    max-width: 90%;
+  }
+
+  .community__content-imgs {
+    width: 450px;
+    height: 280px;
+    max-width: 450px;
+  }
+
+  .community__content-filo {
+    max-width: 200px;
+    max-height: 280px;
+  }
+
   .contact-container {
     width: 100%;
     max-width: 80%;
@@ -197,6 +212,11 @@
     transform: scale(1.1);
   }
 
+  .hero__container {
+    gap: 2rem;
+    top: 3rem;
+  }
+
   .hero__container h1 {
     font-size: 80px;
   }
@@ -206,7 +226,7 @@
   }
 
   .hero__container h2 {
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .hero__logo img {
@@ -311,6 +331,14 @@
     font-size: 1rem;
   }
 
+  .card__content-more {
+    width: 300px;
+  }
+
+  .card__content .card__content-more p {
+    font-size: 1.1rem;
+  }
+
   .card__btn {
     font-size: 1rem;
     bottom: -0.8rem;
@@ -354,27 +382,20 @@
   }
 
   .community__content {
-    width: 80%;
+    width: 90%;
+    left: -3rem;
   }
 
   .community__content-imgs {
-    width: 800px;
-    height: 500px;
-    position: relative;
-    left: -5%;
-    padding: 1rem;
+    min-width: 600px;
+    height: 400px;
   }
 
   .community__content-filo {
-    font-size: 1.2rem;
-    width: 300px;
-    height: 350px;
+    max-width: 300px;
+    top: 15%;
+    left: 60%;
     position: absolute;
-    right: -20%;
-    top: 75px;
-    gap: 1rem;
-    border-radius: 25px;
-    box-shadow: 2px 0 5px var(--noche);
   }
 
   .community__content-filo h3 {
