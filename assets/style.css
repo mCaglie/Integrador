@@ -159,7 +159,6 @@ header a {
   width: 90%;
   height: 80%;
   padding: 0 1rem;
-  top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -446,6 +445,7 @@ header a {
 .card__content {
   width: 260px;
   min-width: 260px;
+  height: 300px;
   display: grid;
   grid-template-rows: 150px 130px;
   justify-content: center;
@@ -540,14 +540,14 @@ header a {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem 0;
   border-radius: 0 0 10px 10px;
 }
 
 .card__content-text h3 {
   font-family: "Major Mono Display", monospace;
   color: var(--unicorn);
-  padding-top: 0.5rem;
+  padding-top: 1rem;
 }
 
 .card__content-text p {
