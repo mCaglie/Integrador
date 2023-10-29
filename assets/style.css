@@ -483,6 +483,8 @@ header a {
 
 .card__content .card__content-more p {
   font-size: 0.9rem;
+  text-overflow: ellipsis;
+  overflow: scroll;
 }
 
 .card-1 .card__btn:hover ~ .more-music {
