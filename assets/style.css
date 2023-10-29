@@ -445,7 +445,7 @@ header a {
 .card__content {
   width: 260px;
   min-width: 260px;
-  height: 300px;
+  min-height: 300px;
   display: grid;
   grid-template-rows: 150px 130px;
   justify-content: center;
